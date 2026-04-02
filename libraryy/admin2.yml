@@ -1,0 +1,19 @@
+info:
+  name: admin2
+  type: http
+  seq: 14
+
+http:
+  method: DELETE
+  url: "{{base_url}}api/admin/users/:id"
+  params:
+    - name: id
+      value: "4"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

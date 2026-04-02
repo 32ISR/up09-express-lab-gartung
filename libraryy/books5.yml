@@ -1,0 +1,19 @@
+info:
+  name: books5
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{base_url}}api/books/:id"
+  params:
+    - name: id
+      value: "2"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

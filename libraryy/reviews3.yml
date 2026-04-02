@@ -1,0 +1,19 @@
+info:
+  name: reviews3
+  type: http
+  seq: 12
+
+http:
+  method: DELETE
+  url: "{{base_url}}api/reviews/:id"
+  params:
+    - name: id
+      value: "6"
+      type: path
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
