@@ -1,0 +1,26 @@
+info:
+  name: reviews copy
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{base_url}}api/books/:id/reviews"
+  params:
+    - name: id
+      value: "4"
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "rating": 5,
+        "comment": "супер пупер книжка мне очень зашло"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

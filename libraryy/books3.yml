@@ -1,0 +1,27 @@
+info:
+  name: books3
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: "{{base_url}}api/books"
+  body:
+    type: json
+    data: |2-
+       {
+                  "title": "ffff",
+                  "author": "Автор автор",
+                  "year": 2019,
+                  "genre": "Фантастика",
+                  "description": "ыыыыыыы"
+                }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc1MTE1Mzk0LCJleHAiOjE3NzUyMDE3OTR9.JqkEzaQcYhB8ZQ3il2JH3q3dnsVeOQ3d8E3MtIrqajE
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

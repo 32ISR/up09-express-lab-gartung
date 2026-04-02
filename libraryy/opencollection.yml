@@ -1,0 +1,32 @@
+opencollection: 1.0.0
+
+info:
+  name: libraryy
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: Authorization
+      value: BearereyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc1MTE1Mzk0LCJleHAiOjE3NzUyMDE3OTR9.JqkEzaQcYhB8ZQ3il2JH3q3dnsVeOQ3d8E3MtIrqajE
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzc1MTE1Mzk0LCJleHAiOjE3NzUyMDE3OTR9.JqkEzaQcYhB8ZQ3il2JH3q3dnsVeOQ3d8E3MtIrqajE
+  variables:
+    - name: base_url
+      value: https://didactic-tribble-q7pvq5ppjg7qf4vwr-3000.app.github.dev/
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
